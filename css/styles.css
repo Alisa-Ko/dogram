@@ -7,8 +7,9 @@ h2 {
 
 .gallery {
     list-style: none;
-    max-height: 65vh;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
 
 }
 .gallery--item_title {
@@ -39,17 +40,15 @@ h2 {
     background-color: azure;
 }
 
-.detailed_image {
-    display: block;
-    width:100rem;
-    height:70rem;
-    object-fit: cover;
-
+.gallery li:nth-child(1) {
+    margin-top: 0;
+    align-self: center;
+    width:70rem;
+    height:50rem;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-   }
+.gallery--item_image1{
+    width:70rem;
+    height:50rem;
+    object-fit: cover;
+}
